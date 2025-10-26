@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get a custom website built for your business. Fill out our form to request a quote and provide your details.">
+    <title>Custom Website Creation Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #333; min-height: 100vh; display: flex; flex-direction: column; }
+        header { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); color: white; text-align: center; padding: 60px 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+        header h1 { font-size: 2.5em; margin: 0; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        header p { font-size: 1.2em; margin: 10px 0; opacity: 0.9; }
+        .container { max-width: 900px; margin: 40px auto; padding: 30px; background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); flex-grow: 1; }
+        .container h2 { color: #667eea; text-align: center; margin-bottom: 20px; }
+        form { display: flex; flex-direction: column; gap: 15px; }
+        label { font-weight: 600; color: #555; }
+        input, select, textarea { padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1em; transition: border-color 0.3s; }
+        input:focus, select:focus, textarea:focus { border-color: #667eea; outline: none; box-shadow: 0 0 5px rgba(102, 126, 234, 0.5); }
+        button { padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; font-size: 1.1em; cursor: pointer; transition: transform 0.2s; }
+        button:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .icon { margin-right: 10px; color: #667eea; }
+        footer { text-align: center; padding: 20px; background: rgba(0,0,0,0.8); color: white; }
+        footer p { margin: 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-globe icon"></i>Get Your Custom Website Built Today!</h1>
+        <p>Professional, affordable websites tailored to your needs. Fill out the form below to request a quote and share your details—we'll get back to you within 24 hours.</p>
+    </header>
+    
+    <div class="container">
+        <h2><i class="fas fa-tools icon"></i>Request a Website Quote</h2>
+        <p>Tell us about your project, and we'll create a stunning site for you. Whether it's a blog, e-commerce store, or business page, we've got you covered.</p>
+        
+        <form action="https://formspree.io/f/xldodrbw" method="POST">
+            <label for="name"><i class="fas fa-user icon"></i>Full Name *</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email"><i class="fas fa-envelope icon"></i>Email Address *</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone"><i class="fas fa-phone icon"></i>Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="website-type"><i class="fas fa-cogs icon"></i>Type of Website *</label>
+            <select id="website-type" name="website-type" required>
+                <option value="">Select...</option>
+                <option value="blog">Blog or Content Site</option>
+                <option value="ecommerce">E-commerce/Online Store</option>
+                <option value="business">Business/Portfolio Site</option>
+                <option value="landing">Landing Page</option>
+                <option value="other">Other (specify below)</option>
+            </select>
+            
+            <label for="budget"><i class="fas fa-dollar-sign icon"></i>Budget Range *</label>
+            <select id="budget" name="budget" required>
+                <option value="">Select...</option>
+                <option value="under-500">$0 - $500</option>
+                <option value="500-2000">$500 - $2,000</option>
+                <option value="2000-5000">$2,000 - $5,000</option>
+                <option value="over-5000">Over $5,000</option>
+            </select>
+            
+            <label for="requirements"><i class="fas fa-list icon"></i>Project Requirements/Details *</label>
+            <textarea id="requirements" name="requirements" rows="5" placeholder="Describe your website idea, features needed (e.g., contact form, payment integration), timeline, and any references." required></textarea>
+            
+            <button type="submit"><i class="fas fa-paper-plane"></i>Submit Request</button>
+        </form>
+        
+        <p style="margin-top: 20px; font-size: 14px; color: #777;">* Required fields. By submitting, you agree to our terms. We'll use your data only for this quote.</p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Custom Website Services. Contact: your-email@example.com</p>
+    </footer>
+</body>
+</html>
